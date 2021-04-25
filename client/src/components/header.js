@@ -1,9 +1,10 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
-import Home from './links';
+import Navbar from 'react-bootstrap/Navbar'
+import Home from './Home';
 import Contact from './Contact'
 import Projects from './Projects'
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 export default function Header() {
 
@@ -15,18 +16,13 @@ export default function Header() {
 return (
   <div>
     <Router>
-    <Nav fill variant="tabs" defaultActiveKey="/">
-  <Nav.Item>
-    <Link  to="/" >About Me</Link>
-  </Nav.Item>
-  <Nav.Item>
-    
-    <Link to="/Projects">Projects</Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Link to="/Contact">Contact</Link>
-  </Nav.Item>
-</Nav>
+    <Navbar bg="dark" variant="dark">
+    <Navbar.Brand href="/">Tyler Williams</Navbar.Brand>
+    <Nav className="mr-auto">
+      <Nav.Link href="/Projects">Projects</Nav.Link>
+      <Nav.Link href="/Contact">Contact</Nav.Link>
+    </Nav> 
+</Navbar>
 <Switch>
       <Route exact path='/'>
         <Home />

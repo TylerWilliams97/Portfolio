@@ -38,27 +38,25 @@ export default function Projects() {
 <Row>
     <Col>
 <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180" />
+  <Card.Img variant="top" src="assets/image/song.jpeg" />
   <Card.Body>
-    <Card.Title>Card Title</Card.Title>
+    <Card.Title>Song Translator</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+     Translate your favorite songs into wacky languages like yoda and groot!
     </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
+    <Button variant="primary" href="https://github.com/Curtis-Hatter/Song-Translation-Application">GitHub</Button>
   </Card.Body>
 </Card>
 </Col>
 <Col>
 <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180" />
+  <Card.Img variant="top" src="assets/image/password.png" />
   <Card.Body>
-    <Card.Title>Card Title</Card.Title>
+    <Card.Title>Password Ganerator</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+      Simple app to create a randomly generated password 
     </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
+    <Button variant="primary" href="https://github.com/TylerWilliams97/Password_Generator">Github</Button>
   </Card.Body>
 </Card>
 </Col>
